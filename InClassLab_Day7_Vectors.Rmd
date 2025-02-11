@@ -72,7 +72,13 @@ ends <- c(combined[1:3], length(combined) - 2:length(combined))
 1. Write a function to simulate rolling a 6-sided die and returns the result.
 
 ```{r}
+die <- function(){
+  die_rolls <- 1:6
+  rolls <- sample(die_rolls, 6, replace = T)
+  rolls
+}
 
+res <- die()
 ```
 
 
@@ -81,6 +87,15 @@ ends <- c(combined[1:3], length(combined) - 2:length(combined))
 
 ```{r}
 
+die <- function(){
+  die_rolls <- 1:6
+  rolls1 <- sample(die_rolls, 6, replace = T)
+  rolls2 <- sample(die_rolls, 6, replace = T)
+  rolls_final = rolls1 + rolls2
+  rolls_final
+}
+
+res_two <- die()
 
 ```
 
